@@ -49,7 +49,7 @@ function main () {
 	install_docker
 
 	cd /home/vagrant
-	cp /var/host/assets/.bash_aliases /home/vagrant
+	cp /var/host/assets/vagrant/.bash_aliases /home/vagrant
 	source /home/vagrant/.bashrc
 }
 

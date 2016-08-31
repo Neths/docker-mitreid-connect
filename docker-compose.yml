@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+  svc-mitreidc:
+    build: ./assets/docker
+    container_name: ct-mitreidc 
+    restart: always
+    volumes:
+       - /vagrant/mitreid-connect/run/mitreid_data:/opt/tomcat/webapps
+    ports:
+       - "8080:8080"
+

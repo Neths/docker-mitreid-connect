@@ -17,7 +17,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     dockerforge.vm.network :private_network, ip: "192.168.42.30"
     dockerforge.vm.network "forwarded_port", guest: 8890 , host: 8890
     dockerforge.vm.network "forwarded_port", guest: 8080 , host: 8080
-    dockerforge.vm.provision :shell, path: "assets/install.sh", args: ""
+    dockerforge.vm.provision :shell, path: "assets/vagrant/install.sh", args: ""
   end
 
 end

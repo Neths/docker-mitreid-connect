@@ -1,0 +1,1 @@
+{"virtualbox":{"/var/host/assets":{"guestpath":"/var/host/assets","hostpath":"D:/docker-mitreid-connect/assets","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"D:/docker-mitreid-connect","disabled":false,"__vagrantfile":true}}}
