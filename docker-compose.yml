@@ -10,3 +10,14 @@ services:
     ports:
        - "8080:8080"
 
+  svc-postgres:
+    image: postgres
+    image: postgres
+#    volumes:
+#      - /vagrant/run/postgres_data:/pgdata
+    environment:
+      POSTGRES_USER: oic
+      POSTGRES_PASSWORD: oic
+      POSTGRES_DB: oic
+#      PGDATA: /pgdata
+
