@@ -1,1 +1,3 @@
 .vagrant/
+run/
+assets/build/build_out/my-openid-connect-server.war
