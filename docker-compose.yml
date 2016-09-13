@@ -3,7 +3,7 @@ version: '2'
 services:
   svc-mitreidc:
     build: ./assets/docker
-    container_name: ct-mitreidc 
+    container_name: svc-mitreidc
     restart: always
     volumes:
        - /vagrant/run/mitreid_data:/opt/tomcat/webapps
@@ -12,7 +12,7 @@ services:
 
   svc-postgres:
     image: postgres
-    image: postgres
+    container_name: svc-postgres
 #    volumes:
 #      - /vagrant/run/postgres_data:/pgdata
     environment:
@@ -20,4 +20,5 @@ services:
       POSTGRES_PASSWORD: oic
       POSTGRES_DB: oic
 #      PGDATA: /pgdata
+
 
