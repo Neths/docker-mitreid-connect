@@ -10,15 +10,22 @@ services:
     ports:
        - "8080:8080"
 
-  svc-postgres:
-    image: postgres
-    container_name: svc-postgres
-#    volumes:
-#      - /vagrant/run/postgres_data:/pgdata
+#   svc-postgres:
+#     image: postgres
+#     container_name: svc-postgres
+# #    volumes:
+# #      - /vagrant/run/postgres_data:/pgdata #not functionnal with vagrant on windows
+#     environment:
+#       POSTGRES_USER: oic
+#       POSTGRES_PASSWORD: oic
+#       POSTGRES_DB: oic
+# #      PGDATA: /pgdata #not functionnal with vagrant on windows
+
+  svc-mariadb:
+    image: mariadb
+    container_name: svc-mariadb
     environment:
-      POSTGRES_USER: oic
-      POSTGRES_PASSWORD: oic
-      POSTGRES_DB: oic
-#      PGDATA: /pgdata
-
-
+      MYSQL_ROOT_PASSWORD: oic
+      MYSQL_DATABASE: oic
+      MYSQL_USER: oic
+      MYSQL_PASSWORD: oic
